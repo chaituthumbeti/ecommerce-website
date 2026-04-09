@@ -1,0 +1,96 @@
+.offers {
+    /* Set height as needed or use full viewport height (100vh) */
+    height: 50vh;
+    /* Example: Half viewport height */
+    position: relative;
+    /* Needed for absolute positioning of content within (optional) */
+}
+
+.offers-image {
+    align-items: center;
+    width: 90%;
+    /* Make the image cover the entire width of the offers section */
+    height: 100%;
+    /* Make the image cover the entire height of the offers section */
+    /* background: linear-gradient(180deg, #f4d8d8, #e1ffea22 60%); */
+    padding-top: 1%;
+    /* 100% / (3 / 1) = 33.33% */
+    overflow: hidden;
+    /* Hide overflowing content */
+    object-fit: cover;
+    padding-left: 6%;
+    /* Ensure the image fills the container and maintains aspect ratio */
+    /* Add other styles like border-radius, opacity, etc. */
+    padding-top: 5%;
+   overflow: hidden;
+}
+
+.offers-left h1 {
+    color: #171717;
+    font-size: 60px;
+    font-weight: 600;
+}
+
+.offers-left p {
+    color: #171717;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.offers-left button {
+    width: 230px;
+    height: 60px;
+    border-radius: 35px;
+    background: #ff4141;
+    border: none;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+.offers-right img {
+    width: 320px;
+    padding-top: 20px;
+}
+
+/* ----- media query----- */
+
+@media(max-width:1280px) {
+    .offers-right img {
+        width: 300px;
+    }
+
+    .offers-left h1 {
+        font-size: 40px;
+    }
+
+    .offers-left p {
+        font-size: 14px;
+    }
+
+    .offers-left button {
+        width: 200px;
+        height: 50px;
+
+        font-size: 18px;
+        margin-top: 25px;
+    }
+}
+
+@media(max-width:1024px) {
+    .offers-right img {
+        width: 200px;
+    }
+}
+
+@media(max-width:800px) {
+    .offers-right {
+        display: none;
+    }
+
+    .offers {
+        padding: 50px 8%;
+    }
+}
